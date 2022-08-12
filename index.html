@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Verbs</title>
+<style>
+    a {
+        text-decoration: none;
+        background: transparent;
+        font-size: 3rem;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <div class="splash">
+        <img id="img-splash" src="assets/splash.png" alt="">    
+    </div>
+
+    <div class="splash-button-container">
+        <button id="btn-splash"><a href="page0.html">Start</a></button>
+    </div>
+    
+    
+
+    <script>
+        window.onload = function() {
+           
+            setTimeout(function() {
+                const btnSplash = document.getElementById('btn-splash')
+            btnSplash.style.visibility = 'visible'
+            }, 2000)
+        }
+
+
+    </script>
+    
+</body>
+</html>
