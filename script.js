@@ -297,7 +297,7 @@ btn4Possibility.addEventListener('click', function() {
     else {
         score.style.color = 'red'
     }
-    btn4Possibility.disabled = true
+    btn4Permission.disabled = true
     btn4Possibility.disabled = true
     btn4Ability.disabled = true
     btn4Offer.disabled = true
@@ -446,6 +446,95 @@ btn5Possibility.addEventListener('click', function() {
         score.style.color = 'red'
     }
     btn5Possibility.disabled = true
+})
+
+// Line 06
+
+let btn6Permission = document.getElementById('btn6Permission')
+let btn6Ability = document.getElementById('btn6Ability')
+let btn6Offer = document.getElementById('btn6Offer')
+let btn6Possibility = document.getElementById('btn6Possibility')
+let like6 = document.getElementById('like6')
+let notGood6 = document.getElementById('notGood6')
+let word6 = document.getElementById('word6')
+
+btn6Possibility.addEventListener('click', function() {
+    let audio = document.getElementById('right')
+    audio.play()
+    like6.style.visibility = 'visible'
+    notGood6.style.visibility = 'hidden'
+    btn6Possibility.style.backgroundColor = 'chartreuse'
+    btn6Possibility.style.color = 'black'
+    word6.style.color = 'chartreuse'
+    value++
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn6Permission.disabled = true
+    btn6Offer.disabled = true
+    btn6Possibility.disabled = true
+    btn6Ability.disabled = true
+})
+
+btn6Offer.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood6.style.visibility = 'visible'
+    btn6Offer.style.backgroundColor = 'red'
+    btn6Offer.style.color = 'yellow'
+    word6.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn6Offer.disabled = true
+})
+btn6Permission.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood6.style.visibility = 'visible'
+    btn6Permission.style.backgroundColor = 'red'
+    btn6Permission.style.color = 'yellow'
+    word6.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn6Permission.disabled = true
+})
+
+btn6Ability.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood6.style.visibility = 'visible'
+    btn6Ability.style.backgroundColor = 'red'
+    btn6Ability.style.color = 'yellow'
+    word6.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn6Ability.disabled = true
 })
 
 
