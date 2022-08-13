@@ -40,7 +40,7 @@
     background: #fff;
     color:rgb(220, 0, 220);
     text-shadow: 1px 1px 2px black;
-    max-width: 380px;
+    max-width: 382px;
     height: 40px;
     margin: 0 auto;
     padding: 5px;
@@ -55,7 +55,7 @@
     background: #fff;
     color:rgb(220, 0, 220);
     text-shadow: 1px 1px 2px black;
-    max-width: 380px;
+    max-width: 382px;
     height: 40px;
     margin: 0 auto;
     padding: 0px;
@@ -85,7 +85,7 @@
     background: rgb(0, 43, 63);
     color: #fff;
     font-family: 'Carter One';
-    max-width: 380px;
+    max-width: 382px;
     max-height: 80px;
 }
 
@@ -97,7 +97,7 @@
     display:flex;
     justify-content: center;
     align-items: flex-end;
-    max-width: 380px;
+    max-width: 382px;
     height: 30px;
     margin:0px auto;
     background: rgb(0, 43, 63);
