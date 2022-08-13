@@ -86,7 +86,7 @@
     background: #fff;
     color:rgb(220, 0, 220);
     text-shadow: 1px 1px 2px black;
-    max-width: 380px;
+    max-width: 370px;
     height: 40px;
     margin: 0 auto;
     padding: 5px;
@@ -101,7 +101,7 @@
     background: #fff;
     color:rgb(220, 0, 220);
     text-shadow: 1px 1px 2px black;
-    max-width: 380px;
+    max-width: 370px;
     height: 40px;
     margin: 0 auto;
     padding: 0px;
@@ -124,15 +124,15 @@
 
 .questions-container {
     display: grid;
-    grid-template-columns: 78% 10% 12%;
+    grid-template-columns: 77% 10% 12%;
     justify-content: start;
     align-items: center;
     margin: 0 auto;
     background: rgb(0, 43, 63);
     color: #fff;
     font-family: 'Carter One';
-    max-width: 380px;
-    height: 70px;
+    max-width: 370px;
+    height: 65px;
 }
 
 .lines {
@@ -143,7 +143,7 @@
     display:flex;
     justify-content: center;
     align-items: flex-end;
-    max-width: 380px;
+    max-width: 370px;
     height: 30px;
     margin:0px auto;
     background: rgb(0, 43, 63);
