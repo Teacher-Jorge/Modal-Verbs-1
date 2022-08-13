@@ -537,4 +537,96 @@ btn6Ability.addEventListener('click', function() {
     btn6Ability.disabled = true
 })
 
+// Line 07
+
+let btn7Permission = document.getElementById('btn7Permission')
+let btn7Ability = document.getElementById('btn7Ability')
+let btn7Offer = document.getElementById('btn7Offer')
+let btn7Possibility = document.getElementById('btn7Possibility')
+let like7 = document.getElementById('like7')
+let notGood7 = document.getElementById('notGood7')
+let word7 = document.getElementById('word7')
+
+btn7Permission.addEventListener('click', function() {
+    let audio = document.getElementById('right')
+    audio.play()
+    like7.style.visibility = 'visible'
+    notGood7.style.visibility = 'hidden'
+    btn7Permission.style.backgroundColor = 'chartreuse'
+    btn7Permission.style.color = 'black'
+    word7.style.color = 'chartreuse'
+    value++
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn7Permission.disabled = true
+    btn7Offer.disabled = true
+    btn7Possibility.disabled = true
+    btn7Ability.disabled = true
+})
+
+btn7Offer.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood7.style.visibility = 'visible'
+    btn7Offer.style.backgroundColor = 'red'
+    btn7Offer.style.color = 'yellow'
+    word7.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn7Offer.disabled = true
+})
+btn7Possibility.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood7.style.visibility = 'visible'
+    btn7Possibility.style.backgroundColor = 'red'
+    btn7Possibility.style.color = 'yellow'
+    word7.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn7Possibility.disabled = true
+})
+
+btn7Ability.addEventListener('click', function() {
+    let audio = document.getElementById('wrong')
+    audio.play()
+    notGood7.style.visibility = 'visible'
+    btn7Ability.style.backgroundColor = 'red'
+    btn7Ability.style.color = 'yellow'
+    word7.style.color = 'red'
+    value--
+    document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    btn7Ability.disabled = true
+})
+
+
+
+
 

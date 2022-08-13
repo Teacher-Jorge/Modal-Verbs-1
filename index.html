@@ -28,6 +28,30 @@
         font-size: 3rem;
         padding: 5px;
     }
+
+    #btn-splash {
+    position: absolute;
+    margin-top: 100px;
+    font-family: 'bangers';
+    font-size: 2rem;
+    color:rgb(0, 183, 255);
+    text-shadow: 1px 1px 2px black;
+    background-color: #fff;
+    border-style: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#btn-splash:hover {
+    background-color: aliceblue;
+}
+
+#btn-splash:active {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
 </style>
 
 
@@ -50,7 +74,7 @@
             setTimeout(function() {
                 const btnSplash = document.getElementById('btn-splash')
             btnSplash.style.visibility = 'visible'
-            }, 2000)
+            }, 1900)
         }
 
 
