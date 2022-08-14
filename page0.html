@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <audio id="click" src="assets/click.wav"></audio>
+
     <style>
      .page0-container {
     margin: 0 auto;
@@ -30,6 +32,7 @@
     margin-top: 10px;
     text-shadow: 1px 1px 2px black;
     letter-spacing: 1px;
+    animation: transitionIn 1s;
 }
 
 .example {
@@ -37,22 +40,15 @@
     font-family: 'Carter one';
 }
 
-a {
-        text-decoration: none;
-        background: transparent;
-        font-size: 2rem;
-        padding: 5px;
-        color: dodgerblue;
-    }
-
     .indication {
         color: red;
     }
 
-    #btn-next {
+    .btn {
     position: absolute;
     margin-top: 10px;
     font-family: 'bangers';
+    font-size: 35px;;
     color:rgb(0, 183, 255);
     text-shadow: 1px 1px 2px black;
     background-color: #fff;
@@ -63,11 +59,11 @@ a {
     border-radius: 10px;
 }
 
-#btn-next:hover {
+.btn:hover {
     background-color: aliceblue;
 }
 
-#btn-next:active {
+.btn:active {
     box-shadow: 1px 1px 2px rgb(0,0, 0, 0.7);
 }
     </style>
@@ -106,8 +102,21 @@ a {
 
 
     <div class="splash-button-container">
-        <button id="btn-next"><a href="page1.html">Practice</a></button>
+        <button id="btnPractice" class="btn">Practice</button>
     </div>
     
+    <script>
+            let btnPractice = document.getElementById('btnPractice')
+
+        btnPractice.addEventListener('click', function() {
+        let audio = document.getElementById('click').play()
+    })
+        btnPractice.addEventListener('click', function() {
+            setTimeout(function() {
+            location.href = 'page1.html'
+            },100)
+        })
+    </script>
+
 </body>
 </html>
