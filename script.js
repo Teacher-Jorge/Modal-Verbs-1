@@ -3,8 +3,6 @@ let btn1Permission = document.getElementById('btn1Permission')
 let btn1Ability = document.getElementById('btn1Ability')
 let btn1Offer = document.getElementById('btn1Offer')
 let btn1Possibility = document.getElementById('btn1Possibility')
-let like1 = document.getElementById('like1')
-let notGood1 = document.getElementById('notGood1')
 let word1 = document.getElementById('word1')
 let score = document.getElementById('score')
 
@@ -13,8 +11,11 @@ let value = 0
 btn1Offer.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like1.style.visibility = 'visible'
-    notGood1.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot1 = document.getElementById('slot1').appendChild(image)
     btn1Offer.style.backgroundColor = 'chartreuse'
     btn1Offer.style.color = 'black'
     word1.style.color = 'chartreuse'
@@ -36,7 +37,14 @@ btn1Offer.addEventListener('click', function() {
 btn1Ability.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood1.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot1 = document.getElementById('slot1').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn1Ability.style.backgroundColor = 'red'
     btn1Ability.style.color = 'yellow'
     word1.style.color = 'red'
@@ -54,7 +62,14 @@ btn1Ability.addEventListener('click', function() {
 btn1Permission.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood1.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot1 = document.getElementById('slot1').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn1Permission.style.backgroundColor = 'red'
     btn1Permission.style.color = 'yellow'
     word1.style.color = 'red'
@@ -73,7 +88,14 @@ btn1Permission.addEventListener('click', function() {
 btn1Possibility.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood1.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot1 = document.getElementById('slot1').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn1Possibility.style.backgroundColor = 'red'
     btn1Possibility.style.color = 'yellow'
     word1.style.color = 'red'
@@ -103,8 +125,11 @@ let word2 = document.getElementById('word2')
 btn2Ability.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like2.style.visibility = 'visible'
-    notGood2.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot2 = document.getElementById('slot2').appendChild(image)
     btn2Ability.style.backgroundColor = 'chartreuse'
     btn2Ability.style.color = 'black'
     word2.style.color = 'chartreuse'
@@ -126,7 +151,14 @@ btn2Ability.addEventListener('click', function() {
 btn2Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood2.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot2 = document.getElementById('slot2').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn2Offer.style.backgroundColor = 'red'
     btn2Offer.style.color = 'yellow'
     word2.style.color = 'red'
@@ -144,7 +176,14 @@ btn2Offer.addEventListener('click', function() {
 btn2Permission.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood2.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot2 = document.getElementById('slot2').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn2Permission.style.backgroundColor = 'red'
     btn2Permission.style.color = 'yellow'
     word2.style.color = 'red'
@@ -163,7 +202,14 @@ btn2Permission.addEventListener('click', function() {
 btn2Possibility.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood2.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot2 = document.getElementById('slot2').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn2Possibility.style.backgroundColor = 'red'
     btn2Possibility.style.color = 'yellow'
     word2.style.color = 'red'
@@ -193,8 +239,11 @@ let word3 = document.getElementById('word3')
 btn3Permission.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like3.style.visibility = 'visible'
-    notGood3.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot3 = document.getElementById('slot3').appendChild(image)
     btn3Permission.style.backgroundColor = 'chartreuse'
     btn3Permission.style.color = 'black'
     word3.style.color = 'chartreuse'
@@ -216,7 +265,14 @@ btn3Permission.addEventListener('click', function() {
 btn3Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood3.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot3 = document.getElementById('slot3').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn3Offer.style.backgroundColor = 'red'
     btn3Offer.style.color = 'yellow'
     word3.style.color = 'red'
@@ -234,7 +290,14 @@ btn3Offer.addEventListener('click', function() {
 btn3Ability.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood3.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot3 = document.getElementById('slot3').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn3Ability.style.backgroundColor = 'red'
     btn3Ability.style.color = 'yellow'
     word3.style.color = 'red'
@@ -253,7 +316,14 @@ btn3Ability.addEventListener('click', function() {
 btn3Possibility.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood3.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot3 = document.getElementById('slot3').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn3Possibility.style.backgroundColor = 'red'
     btn3Possibility.style.color = 'yellow'
     word3.style.color = 'red'
@@ -283,8 +353,11 @@ let word4 = document.getElementById('word4')
 btn4Possibility.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like4.style.visibility = 'visible'
-    notGood4.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot4 = document.getElementById('slot4').appendChild(image)
     btn4Possibility.style.backgroundColor = 'chartreuse'
     btn4Possibility.style.color = 'black'
     word4.style.color = 'chartreuse'
@@ -306,7 +379,14 @@ btn4Possibility.addEventListener('click', function() {
 btn4Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood4.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot4 = document.getElementById('slot4').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn4Offer.style.backgroundColor = 'red'
     btn4Offer.style.color = 'yellow'
     word4.style.color = 'red'
@@ -324,7 +404,14 @@ btn4Offer.addEventListener('click', function() {
 btn4Ability.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood4.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot4 = document.getElementById('slot4').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn4Ability.style.backgroundColor = 'red'
     btn4Ability.style.color = 'yellow'
     word4.style.color = 'red'
@@ -343,7 +430,14 @@ btn4Ability.addEventListener('click', function() {
 btn4Permission.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood4.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot4 = document.getElementById('slot4').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn4Permission.style.backgroundColor = 'red'
     btn4Permission.style.color = 'yellow'
     word4.style.color = 'red'
@@ -372,8 +466,11 @@ let word5 = document.getElementById('word5')
 btn5Ability.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like5.style.visibility = 'visible'
-    notGood5.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot5 = document.getElementById('slot5').appendChild(image)
     btn5Ability.style.backgroundColor = 'chartreuse'
     btn5Ability.style.color = 'black'
     word5.style.color = 'chartreuse'
@@ -395,7 +492,14 @@ btn5Ability.addEventListener('click', function() {
 btn5Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood5.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot5 = document.getElementById('slot5').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn5Offer.style.backgroundColor = 'red'
     btn5Offer.style.color = 'yellow'
     word5.style.color = 'red'
@@ -413,7 +517,14 @@ btn5Offer.addEventListener('click', function() {
 btn5Permission.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood5.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot5 = document.getElementById('slot5').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn5Permission.style.backgroundColor = 'red'
     btn5Permission.style.color = 'yellow'
     word5.style.color = 'red'
@@ -432,7 +543,14 @@ btn5Permission.addEventListener('click', function() {
 btn5Possibility.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood5.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot5 = document.getElementById('slot5').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn5Possibility.style.backgroundColor = 'red'
     btn5Possibility.style.color = 'yellow'
     word5.style.color = 'red'
@@ -461,8 +579,11 @@ let word6 = document.getElementById('word6')
 btn6Possibility.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like6.style.visibility = 'visible'
-    notGood6.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot6 = document.getElementById('slot6').appendChild(image)
     btn6Possibility.style.backgroundColor = 'chartreuse'
     btn6Possibility.style.color = 'black'
     word6.style.color = 'chartreuse'
@@ -484,7 +605,14 @@ btn6Possibility.addEventListener('click', function() {
 btn6Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood6.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot6 = document.getElementById('slot6').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn6Offer.style.backgroundColor = 'red'
     btn6Offer.style.color = 'yellow'
     word6.style.color = 'red'
@@ -502,7 +630,14 @@ btn6Offer.addEventListener('click', function() {
 btn6Permission.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood6.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot6 = document.getElementById('slot6').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn6Permission.style.backgroundColor = 'red'
     btn6Permission.style.color = 'yellow'
     word6.style.color = 'red'
@@ -521,7 +656,14 @@ btn6Permission.addEventListener('click', function() {
 btn6Ability.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood6.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot6 = document.getElementById('slot6').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn6Ability.style.backgroundColor = 'red'
     btn6Ability.style.color = 'yellow'
     word6.style.color = 'red'
@@ -550,8 +692,11 @@ let word7 = document.getElementById('word7')
 btn7Permission.addEventListener('click', function() {
     let audio = document.getElementById('right')
     audio.play()
-    like7.style.visibility = 'visible'
-    notGood7.style.visibility = 'hidden'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/like.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot7 = document.getElementById('slot7').appendChild(image)
     btn7Permission.style.backgroundColor = 'chartreuse'
     btn7Permission.style.color = 'black'
     word7.style.color = 'chartreuse'
@@ -573,7 +718,14 @@ btn7Permission.addEventListener('click', function() {
 btn7Offer.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood7.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot7 = document.getElementById('slot7').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn7Offer.style.backgroundColor = 'red'
     btn7Offer.style.color = 'yellow'
     word7.style.color = 'red'
@@ -591,7 +743,14 @@ btn7Offer.addEventListener('click', function() {
 btn7Possibility.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood7.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot7 = document.getElementById('slot7').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn7Possibility.style.backgroundColor = 'red'
     btn7Possibility.style.color = 'yellow'
     word7.style.color = 'red'
@@ -610,7 +769,14 @@ btn7Possibility.addEventListener('click', function() {
 btn7Ability.addEventListener('click', function() {
     let audio = document.getElementById('wrong')
     audio.play()
-    notGood7.style.visibility = 'visible'
+    let image = document.createElement('img')
+    image.setAttribute('src', 'assets/notGood.png')
+    image.setAttribute('width', '40')
+    image.setAttribute('height', '40')
+    let slot7 = document.getElementById('slot7').appendChild(image)
+    setTimeout(function() {
+        image.remove()
+    }, 1200)
     btn7Ability.style.backgroundColor = 'red'
     btn7Ability.style.color = 'yellow'
     word7.style.color = 'red'

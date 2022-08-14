@@ -78,26 +78,27 @@
 
 .questions-container {
     display: grid;
-    grid-template-columns: 77% 10% 12%;
+    grid-template-columns: 90% 10%;
     justify-content: start;
     align-items: center;
     margin: 0 auto;
     background: rgb(0, 43, 63);
     color: #fff;
     font-family: 'Carter One';
-    max-width: 382px;
-    max-height: 80px;
+    max-width: 370px;
+    height: 100px;
 }
 
-.lines {
+.sentence {
     margin-left: 5px;
+    height: 50px;
 }
 
 .buttons-container{
     display:flex;
     justify-content: center;
     align-items: flex-end;
-    max-width: 382px;
+    max-width: 370px;
     height: 30px;
     margin:0px auto;
     background: rgb(0, 43, 63);
@@ -138,16 +139,4 @@
     Margin-left: 5px
 }
 
-.like {
-    display: flex;
-    width: 50px;
-    margin-bottom: 5px;
-    visibility: hidden;
-}
-.not-good {
-    display: flex;
-    width: 50px;
-    margin-bottom: 5px;
-    visibility: hidden;
-}
 
