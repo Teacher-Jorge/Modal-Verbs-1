@@ -82,7 +82,7 @@
 
 .questions-container {
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 85% 15%;
     justify-content: start;
     align-items: center;
     margin: 0 auto;
